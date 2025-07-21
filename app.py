@@ -17,7 +17,7 @@ st.write("This app forecasts gold prices using time series models (ARIMA/SARIMA)
 with st.sidebar:
     st.header("Settings")
     model_choice = st.selectbox("Select Model", ["arima_gold_model.pkl", "sarima_gold_model.pkl"])
-    forecast_months = st.slider("Forecast Period (months)", 1, 36, 12)
+    forecast_months = st.slider("Forecast Period (months)", 1, 48, 12)
     st.write("ARIMA: Short-term forecasts")
     st.write("SARIMA: Seasonal patterns")
 
